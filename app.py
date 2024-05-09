@@ -24,7 +24,7 @@ def extract_skills(resume_text):
     noun_chunks = nlp_text.noun_chunks
     tokens = [token.text for token in nlp_text if not token.is_stop] # removing stop words and implementing word tokenization
 
-    data = pd.read_csv(r"D:\DATA_SCIENCE_COURSE\PROJECTS\PRoject-4\skills_df.csv") # reading the csv file
+    data = pd.read_csv(r"skills_df.csv") # reading the csv file
     skills = list(data['Word'].values)
     skillset = []
 
