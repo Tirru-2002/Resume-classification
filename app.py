@@ -1,3 +1,7 @@
+import spacy
+spacy.cli.download("en_core_web_sm")
+
+
 # IMPORT LIBRARIES
 import re
 from PyPDF2 import PdfReader
